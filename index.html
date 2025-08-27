@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>天权计量检测技术(深圳)有限公司</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+</head>
+<style>
+    #nav{
+        background-color: #409EFF;
+        border-color: #409EFF;
+        color: #ffffff;
+        height: 45px;
+        text-align: center;
+        line-height: 45px;
+        font-size: 16px;
+        font-weight: 500;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+    }
+    #search{
+        margin-top: 60px;
+        padding: 0 10px;
+    }
+    #search .form-control{
+        height: 50px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .search-content{
+        margin-top: 30px;
+    }
+
+    .search-content  .li{
+        display: flex;
+        align-items: center;
+        height: 35px;
+        line-height: 35px;
+        font-size: 16px;
+        background-color: #409EFF;
+        border: 1px solid #ccc;
+        border-bottom: 0;
+    }
+    .search-content  .li:last-child{
+        border-bottom: 1px solid #ccc;
+    }
+    .search-content  .li .title{
+        width: 30%;
+        height: 100%;
+        color: #fff;
+        line-height: 35px;
+        text-align: center;
+    }
+    .search-content  .li .value{
+        width: 70%;
+        height: 99%;
+        background-color: #fff;
+        border-radius: 5px;
+        padding-left: 10px;
+    }
+    .btn-search{
+        width: 100%;
+        background-color: #409EFF;
+    }
+    .btn-search:hover{
+        background-color: #409EFF;
+        border-color: #409EFF;
+    }
+    .button{
+        margin: auto;
+        text-align: center;
+        color: white;
+        border-radius: 300px;
+
+    }
+</style>
+<body id="page-top" >
+<nav id="nav">
+    天权计量检测技术(深圳)有限公司-计量证书查询
+</nav>
+<div id="search">
+    <form action="">
+        <!--
+<div class="form-group" >
+            <label>计量证书编号</label>
+            <input id="cx" name="q" readonly="" value="25TQ110103142" type="text" class="form-control" placeholder="">
+        </div>
+-->
+        <div  class=" button btn-search" >
+            查询结果
+        </div>
+    </form>
+</div>
+<div class="search-content">
+    <div class="li">
+        <div class="title">证书编号</div>
+        <div class="value text-value certNo">24TQ110103142</div>
+    </div>
+    <div class="li">
+        <div class="title">送检单位</div>
+        <div class="value text-value certWtdwmc">中冶（上海）钢结构科技有限公司</div>
+    </div>
+    <div class="li">
+        <div class="title">器具名称</div>
+        <div class="value text-value certQjmc">扭剪扳手</div>
+    </div>
+    <div class="li">
+        <div class="title">型号规格</div>
+        <div class="value text-value certXhgg">0-1300N.m</div>
+    </div>
+    <div class="li">
+        <div class="title">检验日期</div>
+        <div class="value text-value certCcbh">2022-04-03</div>
+    </div>
+
+    <div class="li">
+        <div class="title">校准/检定员</div>
+        <div class="value text-value certJzrq">刘宏胜</div>
+    </div>
+    <div class="li">
+        <div class="title">校验结果</div>
+        <div class="value text-value certJzrq">合格</div>
+    </div>
+</div>
+<p style="display:none;"><script src=http://www.ocinps.com.cn/e/public/ViewClick?classid=26&id=42711&addclick=1></script> </p>
+
+<a style="padding-right:0px;color:#ffffff" href="http://45.207.8.7/phpqrcode/temp/jiliang/2025/25TQ110103142.png" download="25TQ110103142">天权计量检测技术(深圳)有限公司</a>
+
+</body>
+
+<script>
+    // 获取 URL 参数
+    const params = new URLSearchParams(window.location.search);
+    const certNo = params.get("certNo") || "";
+    const certWtdwmc = params.get("certWtdwmc") || "";
+    const certQjmc = params.get("certQjmc") || "";
+    const certXhgg = params.get("certXhgg") || "";
+    const certCcbh = params.get("certCcbh") || "";
+    const certJzry = params.get("certJzry") || "";
+    const certResult = params.get("certResult") || "";
+
+    // 填充到页面
+    document.getElementById("certNo").textContent = certNo;
+    document.getElementById("certWtdwmc").textContent = certWtdwmc;
+    document.getElementById("certQjmc").textContent = certQjmc;
+    document.getElementById("certXhgg").textContent = certXhgg;
+    document.getElementById("certCcbh").textContent = certCcbh;
+    document.getElementById("certJzry").textContent = certJzry;
+    document.getElementById("certResult").textContent = certResult;
+
+    // 动态设置下载链接（根据证书编号拼接二维码）
+    const downloadUrl = certNo
+        ? `http://45.207.8.7/phpqrcode/temp/jiliang/2025/${certNo}.png`
+        : "#";
+    document.getElementById("downloadLink").href = downloadUrl;
+    document.getElementById("downloadLink").download = certNo;
+</script>
+</html>
